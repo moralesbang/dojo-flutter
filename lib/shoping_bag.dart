@@ -4,10 +4,12 @@ import 'package:provider/provider.dart';
 
 class ShoppingBag extends StatelessWidget {
   final double width;
+  final double itemsCount;
 
   const ShoppingBag({
     super.key,
     this.width = 40,
+    required this.itemsCount,
   });
 
   @override
