@@ -11,4 +11,9 @@ class CartState with ChangeNotifier {
     items.add(product);
     notifyListeners();
   }
+
+  removeProduct(Product product) {
+    items.remove(product);
+    notifyListeners();
+  }
 }
